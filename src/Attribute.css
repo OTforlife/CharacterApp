@@ -1,3 +1,7 @@
-.textarea{
-    
+.attribute{
+    height: 7em;
+    width: 5em;
+    background-color: aquamarine;
+    font-size: 16px;
+    margin: 5px;
 }

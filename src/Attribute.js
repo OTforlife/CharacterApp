@@ -1,10 +1,11 @@
 import React from 'react';
+import './Attribute.css';
 
 class Attribute extends React.Component{
     constructor(props){
         super(props)
 
-        this.state= {input:''}
+        this.state= {input:3}
     }
 
     updateText=(event) => {
@@ -34,8 +35,9 @@ class Attribute extends React.Component{
     }
 
     render(){
-        return (<div><textarea onChange={this.updateText} value ={this.state.input}/>
-        <p>{Math.floor(((this.state.input) - 10) / 2)}</p>
+        return (<div className = 'attribute'><lable>{this.props.name}</lable><textarea onChange={this.updateText} value ={this.state.input}/>
+        <p>Modifier: {Math.floor(((this.state.input) - 10) / 2)}</p>
+
 
 
 
